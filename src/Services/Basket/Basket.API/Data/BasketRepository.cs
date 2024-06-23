@@ -1,7 +1,7 @@
 ﻿namespace Basket.API.Data
 {
     public class BasketRepository(IDocumentSession session)
-        : IBasketRespository
+        : IBasketRepository
     {
         public Task<ShoppingCart> GetBasket(string userName, CancellationToken cancellationToken = default)
         {
